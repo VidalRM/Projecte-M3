@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
+
 /**
  *
  * @author alumne
@@ -38,12 +39,12 @@ public class Controller {
         
         if (usuariL.equals(c.getUsuari()) && pwdL.equals(c.getPwd())) {
             App.setRoot("secondary");
-        } else {
-            intentos--;
+        } else { 
+           intentos--;
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Error de autenticación");
             alert.setHeaderText("Los datos introducidos no són correctos.\n"
-                    + "Torna-ho a intentar.");
+                    + "Vuelvelo a intentar.");
             alert.setContentText("Por seguridad, después de 3 intentos fallidos"
                     + " se bloqueará la cuenta. Te quedan " + intentos + " intentos");
             alert.showAndWait();
@@ -59,4 +60,6 @@ public class Controller {
         pwd.setDisable(false);
         login.setDisable(false);
     }
+    
+    
 }
