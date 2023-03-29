@@ -1,4 +1,4 @@
-    package com.mycompany.caixer;
+package com.mycompany.caixer;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -7,11 +7,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
 
 /**
  * JavaFX App
@@ -38,7 +33,9 @@ public class App extends Application {
 
     public static void main(String[] args) {
         launch();
+
     }
-    
+
+    public static compte inicia;
 
 }

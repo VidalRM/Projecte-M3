@@ -4,17 +4,20 @@
  */
 package com.mycompany.caixer;
 
+
 /**
  *
  * @author alumne
  */
 public class compte {
 
-    public compte() {
+    public String usuari;
+    public String pwd;
+
+    public compte(String usuari, String pwd) {
+        this.usuari = usuari;
+        this.pwd = pwd;
     }
-    
-    public String usuari = "vidal";
-    public String pwd = "1234";
 
     public String getUsuari() {
         return usuari;
@@ -31,5 +34,7 @@ public class compte {
     public void setPwd(String pwd) {
         this.pwd = pwd;
     }
-    
+
+   
+
 }

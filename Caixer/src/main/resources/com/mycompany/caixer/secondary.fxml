@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="765.0" style="-fx-background-color: #8fcb25;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.caixer.logged">
    <children>
-      <Label layoutX="617.0" layoutY="390.0" text="Logout" textFill="WHITE">
+      <Label fx:id="logoutext" layoutX="617.0" layoutY="390.0" text="Logout" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
@@ -20,6 +20,24 @@
                <image>
                   <Image url="@56805.png" />
                </image> 
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="esp" layoutX="12.0" layoutY="474.0" mnemonicParsing="false" onAction="#espanol" prefHeight="54.0" prefWidth="68.0" style="-fx-background-color: #8fcb25;">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@espana.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="eng" layoutX="80.0" layoutY="474.0" mnemonicParsing="false" onAction="#ingles" prefHeight="54.0" prefWidth="68.0" style="-fx-background-color: #8fcb25;">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@reino-unido.png" />
+               </image>
             </ImageView>
          </graphic>
       </Button>
