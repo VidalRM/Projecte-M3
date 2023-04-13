@@ -4,7 +4,6 @@
  */
 package com.mycompany.caixer;
 
-
 /**
  *
  * @author alumne
@@ -13,10 +12,20 @@ public class compte {
 
     public String usuari;
     public String pwd;
+    public float saldo;
 
-    public compte(String usuari, String pwd) {
+    public compte(String usuari, String pwd, float saldo) {
         this.usuari = usuari;
         this.pwd = pwd;
+        this.saldo = saldo;
+    }
+
+    public float getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
     }
 
     public String getUsuari() {
@@ -33,8 +42,6 @@ public class compte {
 
     public void setPwd(String pwd) {
         this.pwd = pwd;
-    }
-
-   
+    }    
 
 }

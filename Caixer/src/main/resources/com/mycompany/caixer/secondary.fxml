@@ -7,11 +7,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="765.0" style="-fx-background-color: #8fcb25;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.caixer.logged">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="765.0" style="-fx-background-color: #8fcb25;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.caixer.Logged">
    <children>
-      <Label fx:id="logoutext" layoutX="617.0" layoutY="390.0" text="Logout" textFill="WHITE">
+      <Label fx:id="logoutext" layoutX="617.0" layoutY="397.0" text="Logout" textFill="WHITE">
          <font>
-            <Font size="24.0" />
+            <Font size="22.0" />
          </font>
       </Label>
       <Button fx:id="logout" layoutX="613.0" layoutY="427.0" mnemonicParsing="false" onAction="#logout" prefHeight="85.0" prefWidth="100.0" style="-fx-background-color: #8fcb25;">
@@ -40,6 +40,35 @@
                </image>
             </ImageView>
          </graphic>
+      </Button>
+      <Button fx:id="ingresar" layoutX="152.0" layoutY="182.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="219.0" text="Ingresar">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="retirar" layoutX="394.0" layoutY="182.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="219.0" text="Retirar">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="saldo" layoutX="394.0" layoutY="227.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="219.0" text="Consultar saldo">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="transf" layoutX="152.0" layoutY="227.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="219.0" text="Transferencia">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="baja" layoutX="394.0" layoutY="274.0" mnemonicParsing="false" onAction="#baja" prefHeight="36.0" prefWidth="219.0" text="Dar de baja">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="cmbPwd" layoutX="152.0" layoutY="274.0" mnemonicParsing="false" onAction="#cambiarPwd" text="Cambiar contraseña">
+         <font>
+            <Font size="19.0" />
+         </font>
       </Button>
    </children>
 </AnchorPane>
