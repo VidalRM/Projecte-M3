@@ -17,7 +17,6 @@ import javafx.scene.control.PasswordField;
  */
 public class Cambiar {
 
-    
     @FXML
     PasswordField pwdU;
 
@@ -26,23 +25,23 @@ public class Cambiar {
 
     @FXML
     PasswordField confirmPwd;
-    
+
     @FXML
     Label contraA;
-    
+
     @FXML
     Label nuevaContra;
-    
+
     @FXML
     Label confContra;
-    
+
     @FXML
     Button confirmar;
-    
+
     @FXML
     Button cancelar;
-    
-    public void cancelar() throws IOException{
+
+    public void cancelar() throws IOException {
         App.setRoot("secondary");
     }
 
@@ -63,8 +62,12 @@ public class Cambiar {
                         warning.showAndWait();
                         break;
                     }
-                    
+
                     compte.setPwd(newPwd.getText());
+                    Alert confirm = new Alert(Alert.AlertType.INFORMATION);
+                    confirm.setTitle("Contraseña actualizada");
+                    confirm.setHeaderText("La contraseña ha sido actualizada con exito");
+                    confirm.showAndWait();
                     App.setRoot("secondary");
                     break;
 
@@ -79,7 +82,7 @@ public class Cambiar {
             }
 
         }
-        
+
         if (trobat == false) {
             Alert warning = new Alert(Alert.AlertType.WARNING);
             warning.setTitle("Atención");

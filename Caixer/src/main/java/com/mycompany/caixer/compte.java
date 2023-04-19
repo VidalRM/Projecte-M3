@@ -42,6 +42,13 @@ public class compte {
 
     public void setPwd(String pwd) {
         this.pwd = pwd;
-    }    
+    }   
+
+    @Override
+    public String toString() {
+        return "compte{" + "usuari=" + usuari + ", pwd=" + pwd + ", saldo=" + saldo + '}';
+    }
+    
+    
 
 }

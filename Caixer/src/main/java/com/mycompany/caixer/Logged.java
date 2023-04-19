@@ -56,6 +56,11 @@ public class Logged {
     public void baja() throws IOException{
         App.setRoot("baja");
     }
+    
+    @FXML
+    public void ingresar() throws IOException{
+        App.setRoot("ingresar");
+    }
 
     @FXML
     public void ingles() {

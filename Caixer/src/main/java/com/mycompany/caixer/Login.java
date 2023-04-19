@@ -114,7 +114,7 @@ public class Login {
     @FXML
     void initialize() {
         App.idioma = "español";
-        App.almacenaUsuarios();
+       
     }
 
 }

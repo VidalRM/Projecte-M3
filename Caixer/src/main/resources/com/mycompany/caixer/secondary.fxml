@@ -41,7 +41,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="ingresar" layoutX="152.0" layoutY="182.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="219.0" text="Ingresar">
+      <Button fx:id="ingresar" layoutX="152.0" layoutY="182.0" mnemonicParsing="false" onAction="#ingresar" prefHeight="36.0" prefWidth="219.0" text="Ingresar">
          <font>
             <Font size="19.0" />
          </font></Button>
