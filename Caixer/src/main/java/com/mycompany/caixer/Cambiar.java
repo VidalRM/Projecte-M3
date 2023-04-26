@@ -47,7 +47,7 @@ public class Cambiar {
 
     public void cambiarPwd() throws IOException {
         boolean trobat = false;
-        for (compte compte : App.compteE) {
+        for (compte compte : compte.Cuentas) {
 
             if (compte.getPwd().equals(pwdU.getText())) {
 

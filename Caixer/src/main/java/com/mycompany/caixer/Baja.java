@@ -52,7 +52,7 @@ public class Baja {
     @FXML
     public void baja() throws IOException {
         boolean trobat = false;
-        for (compte compte : App.compteE) {
+        for (compte compte : compte.Cuentas) {
                 if (pwdB.getText().equals(confPwdB.getText())) {
                     trobat = true;
                     if (pwdB.getText().equals(compte.getPwd()) && confPwdB.getText().equals(compte.getPwd())) {
@@ -61,7 +61,8 @@ public class Baja {
                         warning.setHeaderText("Cuenta dada de baja correctamente -"
                                 + " Account terminated successfully");
                         warning.showAndWait();
-                        App.compteE.remove(compte);
+                        compte.Cuentas.remove(compte);
+                        
                         App.setRoot("secondary");
                         break;
                     } if (trobat == false) {

@@ -6,7 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
-import java.util.ArrayList;
 
 /**
  * JavaFX App
@@ -17,8 +16,6 @@ public class App extends Application {
     
     public static String idioma="";
     
-    public static ArrayList<compte> compteE = new ArrayList<>();
-    
     private static Stage stageLocal;
 
     @Override
@@ -28,14 +25,7 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
     }
-    
-    static void almacenaUsuarios() {
-        compteE.add(new compte("vidal", "1234", 6000));
-        compteE.add(new compte("paco", "1234", 3000));
-        compteE.add(new compte("asd", "asd", 1000));
 
-    }
-    
 
     static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
@@ -48,7 +38,7 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-         App.almacenaUsuarios();
+        compte.cargarDatos();
         launch();
 
     }

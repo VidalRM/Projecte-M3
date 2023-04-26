@@ -35,7 +35,6 @@ public class Login {
 
     int intentos = 3;
 
-   
 
     @FXML
     public void logear() throws IOException {
@@ -44,7 +43,7 @@ public class Login {
         
 
         boolean trobat = false;
-        for (compte compte : App.compteE) {
+        for (compte compte : compte.Cuentas) {
             if (compte.getUsuari().equals(usuariL) && compte.getPwd().equals(pwdL)) {
                 App.setRoot("secondary");
                 trobat = true;

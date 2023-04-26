@@ -45,7 +45,7 @@ public class Retirar {
     @FXML
     public void retirar() throws IOException {
         boolean trobat = false;
-        for (compte compte : App.compteE) {
+        for (compte compte : compte.Cuentas) {
             if (compte.getPwd().equals(pwdB.getText()) && compte.getPwd().equals(confPwdB.getText())) {
                 trobat = true;
                 if (pwdB.getText().equals(confPwdB.getText())) {
