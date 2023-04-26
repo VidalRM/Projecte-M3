@@ -45,7 +45,7 @@
          <font>
             <Font size="19.0" />
          </font></Button>
-      <Button fx:id="retirar" layoutX="394.0" layoutY="182.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="219.0" text="Retirar">
+      <Button fx:id="retirar" layoutX="394.0" layoutY="182.0" mnemonicParsing="false" onAction="#retirar" prefHeight="36.0" prefWidth="219.0" text="Retirar">
          <font>
             <Font size="19.0" />
          </font>

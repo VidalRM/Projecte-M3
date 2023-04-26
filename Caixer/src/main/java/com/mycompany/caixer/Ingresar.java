@@ -69,10 +69,11 @@ public class Ingresar {
         }
         if (trobat == false) {
             Alert warning = new Alert(Alert.AlertType.WARNING);
-            warning.setTitle("Atención - Incorrecta");
-            warning.setContentText("Las contraseñas no coinciden - Passwords do not match");
+            warning.setTitle("Atención - Warning");
+            warning.setContentText("Contraseña incorrecta - Wrong password");
             warning.showAndWait();
         }
+
     }
 
     public void cancelar() throws IOException {

@@ -56,7 +56,7 @@ public class Cambiar {
                 if (newPwd.getText().equals(confirmPwd.getText())) {
                     if (newPwd.getText().equals(compte.getPwd()) && confirmPwd.getText().equals(compte.getPwd())) {
                         Alert warning = new Alert(Alert.AlertType.WARNING);
-                        warning.setTitle("Atención");
+                        warning.setTitle("Atención - Warning");
                         warning.setContentText("Su contraseña no puede ser igual"
                                 + " a la actual");
                         warning.showAndWait();
@@ -65,8 +65,9 @@ public class Cambiar {
 
                     compte.setPwd(newPwd.getText());
                     Alert confirm = new Alert(Alert.AlertType.INFORMATION);
-                    confirm.setTitle("Contraseña actualizada");
-                    confirm.setHeaderText("La contraseña ha sido actualizada con exito");
+                    confirm.setTitle("Contraseña actualizada - Password updated");
+                    confirm.setHeaderText("La contraseña ha sido actualizada con exito - "
+                            + "Password updated successfully");
                     confirm.showAndWait();
                     App.setRoot("secondary");
                     break;

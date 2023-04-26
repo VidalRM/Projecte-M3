@@ -44,7 +44,6 @@ public class Logged {
     @FXML
     public void logout() throws IOException {
         App.setRoot("primary");
-
     }
     
     @FXML
@@ -60,6 +59,11 @@ public class Logged {
     @FXML
     public void ingresar() throws IOException{
         App.setRoot("ingresar");
+    }
+    
+    @FXML
+    public void retirar() throws IOException{
+        App.setRoot("retirar");
     }
 
     @FXML
