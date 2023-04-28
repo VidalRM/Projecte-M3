@@ -49,26 +49,11 @@ public class transferir {
     PasswordField confPwdB;
 
     public void transferencia() throws IOException {
-        boolean trobatU = false;
-        boolean trobatP = false;
+        
         
         for (compte cuenta : compte.Cuentas) {
-            if (cuenta.getPwd().equals(pwdB.getText()) && cuenta.getPwd().equals(confPwdB.getText())) {
-                trobatP = true;
-                if (pwdB.getText().equals(confPwdB.getText())) {
-                    float nuevosaldo = Float.parseFloat(cantidadT.getText());
-                    cuenta.setSaldo(cuenta.getSaldo() + nuevosaldo);
-                    movimientos.Mov.add(new movimientos(cuenta.getUsuari(), "Ingreso", nuevosaldo));
-                    movimientos.guardarMovs();
-                    compte.guardarDatos();
-                }
-            }
-            
         }
         
-        if (trobatP == false){
-            
-        }
     }
 
     public void cancelar() throws IOException {
