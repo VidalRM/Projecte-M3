@@ -16,10 +16,13 @@ import javafx.scene.control.TextField;
  *
  * @author alumne
  */
-public class Ingresar {
+public class transferir {
 
     @FXML
     Label cantidad;
+
+    @FXML
+    Label remitente;
 
     @FXML
     Label pwd;
@@ -37,17 +40,36 @@ public class Ingresar {
     TextField cantidadT;
 
     @FXML
+    TextField remitenteT;
+
+    @FXML
     PasswordField pwdB;
 
     @FXML
     PasswordField confPwdB;
 
-    @FXML
-    public void ingresar() throws IOException {         
-
+    public void transferencia() throws IOException {
+        boolean trobatU = false;
+        boolean trobatP = false;
+        
+        for (compte cuenta : compte.Cuentas) {
+            if (cuenta.getPwd().equals(pwdB.getText()) && cuenta.getPwd().equals(confPwdB.getText())) {
+                trobatP = true;
+                if (pwdB.getText().equals(confPwdB.getText())) {
+                    float nuevosaldo = Float.parseFloat(cantidadT.getText());
+                    cuenta.setSaldo(cuenta.getSaldo() + nuevosaldo);
+                    movimientos.Mov.add(new movimientos(cuenta.getUsuari(), "Ingreso", nuevosaldo));
+                    movimientos.guardarMovs();
+                    compte.guardarDatos();
+                }
+            }
+            
+        }
+        
+        if (trobatP == false){
+            
+        }
     }
-    
-    
 
     public void cancelar() throws IOException {
         App.setRoot("secondary");

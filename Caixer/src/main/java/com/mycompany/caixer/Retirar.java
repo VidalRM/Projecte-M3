@@ -63,6 +63,9 @@ public class Retirar {
                     confirm.setHeaderText("Retiro realizado"
                             + " correctamente - The withdrawal has been successfully completed");
                     confirm.showAndWait();
+                    movimientos.Mov.add(new movimientos(compte.getUsuari(), "Retiro", -nuevosaldo));
+                    movimientos.guardarMovs();
+                    compte.guardarDatos();
                     App.setRoot("secondary");
                     break;
                 } else {

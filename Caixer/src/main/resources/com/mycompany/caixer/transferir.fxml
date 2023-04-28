@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="285.0" prefWidth="600.0" style="-fx-background-color: #8fcb25;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.caixer.transferir">
+   <children>
+      <Label fx:id="cantidad" layoutX="99.0" layoutY="72.0" text="Cantidad" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="pwd" layoutX="99.0" layoutY="110.0" text="Contraseña" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="confPwd" layoutX="99.0" layoutY="150.0" text="Confirmar contraseña" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pwdB" layoutX="337.0" layoutY="110.0" />
+      <PasswordField fx:id="confPwdB" layoutX="337.0" layoutY="150.0" />
+      <Button fx:id="confirmar" layoutX="99.0" layoutY="204.0" mnemonicParsing="false" onAction="#transferencia" prefHeight="48.0" prefWidth="184.0" text="Confirmar">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelar" layoutX="324.0" layoutY="204.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="48.0" prefWidth="184.0" text="Cancelar">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <TextField fx:id="cantidadT" layoutX="337.0" layoutY="72.0" />
+      <Label fx:id="cantidad1" layoutX="99.0" layoutY="34.0" text="Usuario remitente" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="remitenteT" layoutX="337.0" layoutY="32.0" />
+   </children>
+</AnchorPane>

@@ -69,6 +69,9 @@ public class Cambiar {
                     confirm.setHeaderText("La contraseña ha sido actualizada con exito - "
                             + "Password updated successfully");
                     confirm.showAndWait();
+                    movimientos.Mov.add(new movimientos(compte.getUsuari(), "CambioContraseña", 0));
+                    movimientos.guardarMovs();
+                    compte.guardarDatos();
                     App.setRoot("secondary");
                     break;
 

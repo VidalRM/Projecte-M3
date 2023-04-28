@@ -65,6 +65,11 @@ public class Logged {
     public void retirar() throws IOException{
         App.setRoot("retirar");
     }
+    
+    @FXML
+    public void transferencia() throws IOException {
+        App.setRoot("transferir");
+    }
 
     @FXML
     public void ingles() {

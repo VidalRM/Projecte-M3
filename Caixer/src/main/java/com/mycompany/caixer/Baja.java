@@ -62,8 +62,8 @@ public class Baja {
                                 + " Account terminated successfully");
                         warning.showAndWait();
                         compte.Cuentas.remove(compte);
-                        
-                        App.setRoot("secondary");
+                        compte.guardarDatos();
+                        App.setRoot("primary");
                         break;
                     } if (trobat == false) {
                         Alert warning = new Alert(Alert.AlertType.WARNING);
