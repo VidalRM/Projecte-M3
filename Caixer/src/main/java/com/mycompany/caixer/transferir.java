@@ -22,7 +22,7 @@ public class transferir {
     Label cantidad;
 
     @FXML
-    Label remitente;
+    Label destinatario;
 
     @FXML
     Label pwd;
@@ -68,13 +68,15 @@ public class transferir {
             confPwd.setText("Confirm password");
             confirmar.setText("Confirm");
             cancelar.setText("Cancel");
-        } else {
+            destinatario.setText("Addressee");
+       } else {
             App.idioma = "español";
             cantidad.setText("Cantidad");
             pwd.setText("Contraseña");
             confPwd.setText("Confirmar contraseña");
             confirmar.setText("Confirmar");
             cancelar.setText("Cancelar");
+            destinatario.setText("Destinatario");
         }
 
     }

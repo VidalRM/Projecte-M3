@@ -37,7 +37,7 @@
          </font>
       </Button>
       <TextField fx:id="cantidadT" layoutX="337.0" layoutY="72.0" />
-      <Label fx:id="cantidad1" layoutX="99.0" layoutY="34.0" text="Usuario remitente" textFill="WHITE">
+      <Label fx:id="destinatario" layoutX="99.0" layoutY="34.0" text="Destinatario" textFill="WHITE">
          <font>
             <Font size="19.0" />
          </font>
