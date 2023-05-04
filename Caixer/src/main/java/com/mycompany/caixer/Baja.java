@@ -10,7 +10,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
 
 /**
  *
@@ -31,28 +30,35 @@ public class Baja {
     Button cancelar;
 
     @FXML
-    TextField user;
-
-    @FXML
     PasswordField pwdB;
 
     @FXML
     PasswordField confPwdB;
-    
-    /**
 
-    Método que se encarga de eliminar una cuenta de usuario. Primero comprueba que las contraseñas
-    introducidas coinciden, luego busca la cuenta a eliminar en la lista de cuentas de la aplicación
-    y si la encuentra y las contraseñas coinciden, la elimina. Si no encuentra la cuenta o las
-    contraseñas no coinciden, muestra una alerta correspondiente.
-    @throws IOException si hay un problema al cambiar la vista de la aplicación.
-    * 
-    */
-    
+    /**
+     *
+     * Método que se encarga de eliminar una cuenta de usuario. Primero
+     * comprueba que las contraseñas introducidas coinciden, luego busca la
+     * cuenta a eliminar en la lista de cuentas de la aplicación y si la
+     * encuentra y las contraseñas coinciden, la elimina. Si no encuentra la
+     * cuenta o las contraseñas no coinciden, muestra una alerta
+     * correspondiente.
+     *
+     * @throws IOException si hay un problema al cambiar la vista de la
+     * aplicación.
+     *
+     */
     @FXML
     public void baja() throws IOException {
         boolean trobat = false;
-        for (compte compte : compte.Cuentas) {
+        // Si alguno de los campos está vacío, muestra una alerta de advertencia.
+        if ( pwdB.getText().isEmpty() || confPwdB.getText().isEmpty()) {
+            Alert warning = new Alert(Alert.AlertType.WARNING);
+            warning.setTitle("Atención - Warning");
+            warning.setContentText("Por favor, rellena los campos - Please, fill in the fields");
+            warning.showAndWait();
+        } else {
+            for (compte compte : compte.Cuentas) {
                 if (pwdB.getText().equals(confPwdB.getText())) {
                     trobat = true;
                     if (pwdB.getText().equals(compte.getPwd()) && confPwdB.getText().equals(compte.getPwd())) {
@@ -65,7 +71,8 @@ public class Baja {
                         compte.guardarDatos();
                         App.setRoot("primary");
                         break;
-                    } if (trobat == false) {
+                    }
+                    if (trobat == false) {
                         Alert warning = new Alert(Alert.AlertType.WARNING);
                         warning.setTitle("Atención - Warning");
                         warning.setContentText("Contraseña incorrecta");
@@ -79,19 +86,33 @@ public class Baja {
                     warning.showAndWait();
                     break;
                 }
+            }
         }
+
+    }
+
+    /**
+     *
+     * Método que cancela una operación y vuelve a la pantalla secundaria.
+     *
+     * @throws IOException si hay un error en la carga de la pantalla
+     * secundaria.
+     *
+     */
+    public void cancelar() throws IOException {
+        App.setRoot("secondary");
     }
     
     /**
 
-    Método que cancela una operación y vuelve a la pantalla secundaria.
-    @throws IOException si hay un error en la carga de la pantalla secundaria.
+    Este método se llama automáticamente al inicializar la ventana.
+    Se encarga de configurar el texto de los elementos de la interfaz
+    dependiendo del idioma seleccionado en la aplicación.
+    Si el idioma es inglés, se establece el texto en inglés para los
+    elementos de la interfaz. Si es español, se establece el texto
+    en español.
     * 
     */
-
-    public void cancelar() throws IOException {
-        App.setRoot("secondary");
-    }
 
     @FXML
     void initialize() {

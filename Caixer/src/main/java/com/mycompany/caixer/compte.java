@@ -56,6 +56,16 @@ public class compte {
         this.pwd = pwd;
     }   
 
+    /**
+
+    Clase que se encarga de cargar y guardar los datos de las cuentas en un archivo de texto.
+    */
+    
+    /**
+
+    Método estático que carga los datos de las cuentas desde el archivo de texto "cuentas.csv"
+    y los almacena en un ArrayList de cuentas.
+    */
     
     public static void cargarDatos(){
         try (BufferedReader reader = new BufferedReader(new FileReader (CUENTAS))){
@@ -73,6 +83,13 @@ public class compte {
         }
                 
     }
+    
+    /**
+
+    Método estático que guarda los datos de las cuentas en el archivo de texto "cuentas.csv".
+    Recorre el ArrayList de cuentas y escribe los datos de cada cuenta separados por comas en una línea.
+    Si se produce algún error en la escritura del archivo, se muestra un mensaje de error.
+    */
     
     public static void guardarDatos(){
         BufferedWriter writer = null;

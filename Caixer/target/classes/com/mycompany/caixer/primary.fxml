@@ -11,38 +11,38 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="765.0" style="-fx-background-color: #8fcb25;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.caixer.Login">
        <children>
-        <ImageView fitHeight="307.0" fitWidth="578.0" layoutX="15.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="307.0" fitWidth="578.0" layoutX="15.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@logo.png" />
          </image></ImageView>
-        <Label fx:id="welc" layoutX="251.0" layoutY="68.0" text="¡Bienvenido!" textFill="WHITE">
+        <Label fx:id="welc" layoutX="251.0" layoutY="38.0" text="¡Bienvenido!" textFill="WHITE">
             <font>
                 <Font size="44.0" />
             </font>
         </Label>
-        <Label fx:id="text" layoutX="94.0" layoutY="140.0" text="Por favor, introduzca sus datos de inicio de sesión" textAlignment="CENTER" textFill="WHITE">
+        <Label fx:id="text" layoutX="94.0" layoutY="110.0" text="Por favor, introduzca sus datos de inicio de sesión" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font size="23.0" />
             </font>
         </Label>
-        <TextField fx:id="user" layoutX="469.0" layoutY="328.0" promptText="Usuario" />
-        <PasswordField fx:id="pwd" layoutX="469.0" layoutY="380.0" promptText="Contraseña" />
-        <ImageView fitHeight="113.0" fitWidth="94.0" layoutX="508.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+        <TextField fx:id="user" layoutX="469.0" layoutY="281.0" promptText="Usuario" />
+        <PasswordField fx:id="pwd" layoutX="469.0" layoutY="333.0" promptText="Contraseña" />
+        <ImageView fitHeight="113.0" fitWidth="94.0" layoutX="508.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@2424651.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="434.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="434.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@lock.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="434.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="434.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@user.png" />
             </image>
         </ImageView>
-        <Button fx:id="login" layoutX="504.0" layoutY="432.0" mnemonicParsing="false" onAction="#logear" prefHeight="71.0" prefWidth="76.0" style="-fx-background-color: #8fcb25;">
+        <Button fx:id="login" layoutX="498.0" layoutY="380.0" mnemonicParsing="false" onAction="#logear" prefHeight="71.0" prefWidth="76.0" style="-fx-background-color: #8fcb25;">
             <graphic>
                 <ImageView fitHeight="85.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -68,6 +68,8 @@
                </image>
             </ImageView>
          </graphic>
-      </Button> 
+      </Button>
+      <Button fx:id="registro" layoutX="584.0" layoutY="476.0" mnemonicParsing="false" onAction="#registrar" style="-fx-background-color: #8fcb25;" text="Registrarse" textFill="#379cab" />
+      <Label fx:id="no_tienes" layoutX="434.0" layoutY="480.0" text="¿No tienes cuenta?" /> 
     </children>
 </AnchorPane>

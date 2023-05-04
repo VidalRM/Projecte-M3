@@ -4,8 +4,6 @@
  */
 package com.mycompany.caixer;
 
-import static com.mycompany.caixer.compte.CUENTAS;
-import static com.mycompany.caixer.compte.Cuentas;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
@@ -57,6 +55,13 @@ public class movimientos {
         this.saldo = saldo;
     }
     
+    /**
+
+    Carga los movimientos desde un archivo de texto y los almacena en la lista Mov.
+    @throws FileNotFoundException si el archivo de movimientos no se encuentra en la ruta especificada.
+    @throws IOException si ocurre un error al leer el archivo de movimientos.
+    */
+    
     public static void cargarMovs(){
         try (BufferedReader reader = new BufferedReader(new FileReader (MOVS))){
             String linea;
@@ -73,6 +78,12 @@ public class movimientos {
         }
                 
     }
+    
+    /**
+
+    Guarda los movimientos almacenados en la lista Mov en un archivo de texto.
+    @throws IOException si ocurre un error al escribir en el archivo de movimientos.
+    */
     
     public static void guardarMovs(){
         BufferedWriter writer = null;

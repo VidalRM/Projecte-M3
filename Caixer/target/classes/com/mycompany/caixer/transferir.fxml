@@ -42,6 +42,6 @@
             <Font size="19.0" />
          </font>
       </Label>
-      <TextField fx:id="remitenteT" layoutX="337.0" layoutY="32.0" />
+      <TextField fx:id="destinatarioT" layoutX="337.0" layoutY="32.0" />
    </children>
 </AnchorPane>
