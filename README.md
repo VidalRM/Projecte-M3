@@ -23,6 +23,7 @@ Este cajero automático permite a los usuarios realizar las siguientes operacion
      
 4.      Usabilidad
 Al ejecutar el programa, se muestra la pantalla de inicio, donde el usuario puede darse de alta si no está registrado o iniciar sesión si ya dispone de una cuenta. También podrá seleccionar el idioma entre Español e Ingles. Una vez iniciada la sesión nos muestra el menú de opciones. En la opción "Ingresar", el usuario puede ingresar la cantidad que desee, también le pedirá su contraseña y una confirmación por seguiridad. Por otro lado, en la opción "Retirar, el usuario puede retirar del mismo modo la cantidad de dinero que desee siempre que lo tenga disponible, también contando con la contraseña por seguirdad. La opción "Consultar saldo" mostrará en pantalla el saldo actual de la cuenta del usuario. La opción "transferir" permite transferir dinero de una cuenta corriente a otra siempre que cuente con el saldo correspondiente. El cajero tambien cuenta con la opción "Cambiar contraseña" por si el usuario desea cambiarla. Por último, también cuenta con la opción de dar de baja su cuenta.
+
            ![Captura de 2023-05-05 13-07-17](https://user-images.githubusercontent.com/95284726/236442393-98357b35-3b64-4392-a094-ed44e3eb9302.png)
            ![Captura de 2023-05-05 13-11-02](https://user-images.githubusercontent.com/95284726/236442999-0caa08b3-72bb-4c13-b563-cf513afc8f4f.png)
 
