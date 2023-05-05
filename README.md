@@ -27,14 +27,11 @@ Al ejecutar el programa, se muestra la pantalla de inicio, donde el usuario pued
            ![Captura de 2023-05-05 13-11-02](https://user-images.githubusercontent.com/95284726/236442999-0caa08b3-72bb-4c13-b563-cf513afc8f4f.png)
 
 
-5.      Diagrama de clases
-
-
-6.      Autor
+5.      Autor
 Este proyecto ha sido creado por Vidal Rivera Murillo de 1º CFGS DAW.
 
-7.      Conclusión
+6.      Conclusión
 En conclusión, este proyecto de cajero automático ofrece a los usuarios una serie de funcionalidades esenciales para gestionar las cuentas bancarias. Además cuenta con una interfaz de usuario intuitiva y amigable que facilita la navegación por la aplicación.
 
-8.      Opinión Personal
+7.      Opinión Personal
 Ha sido un proyecto largo y complicado, pero he querido tomarmelo como un desafío. A base de prueba y error he podido poner a prueba mis capacidades hasta lograr crear la aplicación y quedar satisfecho con los resultados.
