@@ -66,7 +66,6 @@ public class transferir {
         compte CompteD = null; //Cuenta destino
         compte CompteR = null; //Cuenta remitente
 
-        boolean existe = false;
 
         String cantT = cantidadT.getText(); //cantidad a transfeir
         String destT = destinatarioT.getText(); //nombre usuario cuenta destinatario
@@ -84,7 +83,6 @@ public class transferir {
             for (compte cuenta : compte.Cuentas) {
                 if (destinatarioT.getText().equals(cuenta.getUsuari())) {
                     CompteD = cuenta;
-                    existe = true;
                     break;
                 } else {
                     Alert warning = new Alert(Alert.AlertType.WARNING);
@@ -141,7 +139,7 @@ public class transferir {
                 warning.setContentText("Contraseña incorrecta - Wrong password");
                 warning.showAndWait();
             } else {
-                if (CompteR.getPwd().equals(pwdB.getText()) && existe == true) {
+                if (CompteR.getPwd().equals(pwdB.getText())) {
                     Alert confirm = new Alert(Alert.AlertType.INFORMATION);
                     confirm.setTitle("Transferencia realizada - Transfer done");
                     confirm.setHeaderText("Transferencia realizada"
